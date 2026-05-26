@@ -1,8 +1,7 @@
-import Logo from "@/components/Logo";
-import Navigation from "@/components/Navigation";
-import AuthNavigation from "@/components/AuthNavigation";
+import { Geist, Geist_Mono } from "next/font/google";
 
-import { Geist, Geist_Mono } from "@next/font/google";
+import "@/app/_styles/globals.css";
+import Header from "@/app/_components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,9 +13,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-import "@/app/_styles/globals.css";
-import Header from "@/components/Header";
-
 export const metadata = {
   title: {
     template: "%s / Secure Vote",
@@ -25,18 +21,15 @@ export const metadata = {
   description: "A secure voting platform for democratic processes.",
 };
 
-export default function RootLayout() {
+export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Header>
-          <Logo />
-          <Navigation />
-          <AuthNavigation />
-        </Header>
+        <Header />
+        <main className="flex-1">{children}</main>
       </body>
     </html>
   );
