@@ -1,35 +1,31 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import Logo from "@/app/_components/Logo";
+import Navigation from "@/app/_components/Navigation";
+import ClientNavigation from "@/app/_components/ClientNavigation";
 
 import "@/app/_styles/globals.css";
 import Header from "@/app/_components/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata = {
   title: {
-    template: "%s / Secure Vote",
-    default: "Welcome / Secure Vote",
+    template: "%s / Secure Voting",
+    default: "Welcome / Secure Voting",
   },
-  description: "A secure voting platform for democratic processes.",
+  description:
+    "Secure Voting is a secure and transparent voting system built on blockchain technology. It ensures the integrity of the voting process while maintaining voter privacy.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
-        <Header />
-        <main className="flex-1">{children}</main>
+    <html lang="en">
+      <body className="">
+        <Header>
+          <Logo />
+          <Navigation />
+          <ClientNavigation />
+        </Header>
+        <div className="">
+          <main className="">{children}</main>
+        </div>
       </body>
     </html>
   );
