@@ -14,7 +14,6 @@ export default function Page() {
     <>
       <div className="flex h-full items-center justify-center">
         <div className="flex w-full max-w-7xl items-center justify-between px-8 md:px-12 lg:px-20 gap-8">
-          {/* Left: hero content */}
           <div className="flex flex-col items-start gap-5 flex-1 min-w-0">
             <div className="flex items-center gap-2 border-2 border-gray-300 rounded-full font-semibold px-4 py-2 w-max bg-[#F1F6FE] text-[#435FF2]/75 text-sm">
               <ShieldCheck className="stroke-[#2F88FF] w-4 h-4" />
@@ -28,16 +27,22 @@ export default function Page() {
             </h1>
 
             <p className="text-base leading-7 text-zinc-400 md:text-lg max-w-lg">
-              Empower universities, organizations, and institutions across Jordan
-              with a modern voting platform focused on transparency, voter
-              protection, and trusted election results.
+              Empower universities, organizations, and institutions across
+              Jordan with a modern voting platform focused on transparency,
+              voter protection, and trusted election results.
             </p>
 
             <Link
-              href="/Register"
-              className="flex items-center gap-2 rounded-md bg-[#435FF2] px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#435FF2]/90"
+              href="/register"
+              className="group relative flex items-center gap-2 overflow-hidden rounded-lg bg-[#435FF2] border border-black/30 border-b-[3px] border-r-[3px] border-b-black/70 border-r-black/70 px-6 py-3 text-[15px] font-medium text-white shadow-[0_4px_10px_rgba(0,0,0,0.18)] duration-150 hover:translate-y-[1px] hover:translate-x-[1px] hover:border-b-[2px] hover:border-r-[2px] active:translate-y-[2px] active:translate-x-[2px]"
             >
-              Get Started <ArrowRight className="w-4 h-4" />
+              {/* White Shine */}
+              <span className="absolute left-[-120%] top-0 h-full w-1/3 rotate-12 bg-white/50 blur-md transition-all duration-700 group-hover:left-[130%]" />
+
+              <span className="relative z-10 flex items-center gap-2">
+                Get Started
+                <ArrowRight className="h-5 w-5" />
+              </span>
             </Link>
 
             <div className="flex items-center">
@@ -71,7 +76,6 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Right: phone mockup */}
           <div className="hidden lg:flex items-center justify-center shrink-0 pr-8">
             <Image
               src="/iphone.png"
