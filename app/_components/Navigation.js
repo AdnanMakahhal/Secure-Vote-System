@@ -5,10 +5,7 @@ export default function Navigation() {
     <nav className="">
       <ul className="flex gap-6 text-[#505561]">
         <li>
-          <Link
-            href=""
-            className=""
-          >
+          <Link href="" className="">
             Elections
           </Link>
         </li>

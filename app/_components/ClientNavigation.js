@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Navigation() {
+export default function ClientNavigation() {
   return (
     <nav>
       <ul>
