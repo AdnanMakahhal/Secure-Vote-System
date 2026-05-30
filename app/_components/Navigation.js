@@ -3,14 +3,14 @@ import Link from "next/link";
 export default function Navigation() {
   return (
     <nav className="">
-      <ul className="flex gap-6 text-[#505561]">
-        <li>
-          <Link href="" className="">
+      <ul className="flex gap-2 text-[#505561]">
+        <li className="px-3 py-1 rounded-md hover:bg-[#F1F6FE] hover:text-[#435FF2] active:bg-[#F1F6FE] active:text-[#435FF2]">
+          <Link href="/user/elections" className="">
             Elections
           </Link>
         </li>
-        <li>
-          <Link href="" className="">
+        <li className="px-3 py-1 rounded-md hover:bg-[#F1F6FE] hover:text-[#435FF2] active:bg-[#F1F6FE] active:text-[#435FF2]">
+          <Link href="/user/results" className="">
             Results
           </Link>
         </li>

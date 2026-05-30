@@ -3,15 +3,18 @@ import RegisterForm from "@/app/_components/RegisterForm";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gray-100 p-5">
-      <div className="flex flex-col align-center border-2 border-[#4E5562]/55 rounded-lg p-5 max-w-2xl">
-        <div className="flex items-center gap-2 mb-5">
-          <ShieldCheck className="stroke-[#2F88FF] w-8 h-8" />
-          <h2 className="font-bold">SecureVote</h2>
+    <main className="flex min-h-screen items-center justify-center bg-[#f9fafb] p-6">
+      <div className="w-full max-w-2xl rounded-3xl border border-[#E5E7EB] bg-white p-8 md:p-10 shadow-[0_2px_8px_rgba(15,23,42,0.05)]">
+        <div className="mb-8">
+          <h1 className="mb-2 text-3xl font-bold text-[#111827]">
+            Create Your Account
+          </h1>
+
+          <p className="text-[#6B7280]">
+            Register to securely participate in elections and
+            manage your voting profile.
+          </p>
         </div>
-        <p className="text-gray-600 mb-5">
-          Create your account to get started.
-        </p>
 
         <RegisterForm />
       </div>
