@@ -5,8 +5,7 @@ export const metadata = {
     template: "SecureVote - %s",
     default: "SecureVote - Home",
   },
-  description:
-    "Secure Voting is a secure and transparent voting system built on blockchain technology. It ensures the integrity of the voting process while maintaining voter privacy.",
+  description: "Jordan's trusted digital voting platform.",
 };
 
 export default function RootLayout({ children }) {

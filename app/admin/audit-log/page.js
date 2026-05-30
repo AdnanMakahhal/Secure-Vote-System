@@ -1,5 +1,9 @@
 import { FileText } from "lucide-react";
 
+export const metadata = {
+  title: "Audit Log",
+};
+
 export default function Page() {
     const logs = [
     {

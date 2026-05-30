@@ -1,6 +1,10 @@
 import { RefreshCcw } from "lucide-react";
 import { Cpu, HardDrive, Activity, Wifi } from "lucide-react";
 
+export const metadata = {
+  title: "Servers",
+};
+
 export default function Page() {
   return (
     <div className="p-6 sm:p-8 lg:p-12">

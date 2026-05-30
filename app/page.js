@@ -1,13 +1,14 @@
 import {
+  AppWindow,
   ArrowRight,
   LockKeyhole,
   Minus,
-  ShieldCheck,
   Signal,
   Users,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
 
 export default function Page() {
   return (
@@ -15,7 +16,7 @@ export default function Page() {
       <div className="flex w-full max-w-7xl flex-col items-center justify-between gap-12 px-5 sm:px-8 md:px-12 lg:flex-row lg:px-20">
         <div className="flex flex-1 flex-col items-center gap-5 text-center lg:items-start lg:text-left">
           <div className="flex items-center gap-2 rounded-full border-2 border-gray-300 bg-[#F1F6FE] px-4 py-2 text-sm font-semibold text-[#435FF2]/75">
-            <ShieldCheck className="h-4 w-4 stroke-[#2F88FF]" />
+            <AppWindow className="h-4 w-4 stroke-[#2F88FF]" />
             <span>Jordan&apos;s Trusted Digital Voting Platform</span>
           </div>
 

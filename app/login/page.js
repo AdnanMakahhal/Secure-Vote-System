@@ -1,5 +1,8 @@
-import { ShieldCheck } from "lucide-react";
 import LoginForm from "@/app/_components/LoginForm";
+
+export const metadata = {
+  title: "Login",
+};
 
 export default function Page() {
   return (

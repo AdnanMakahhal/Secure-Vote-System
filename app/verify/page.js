@@ -1,6 +1,10 @@
 import { ShieldCheck, X } from "lucide-react";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Verify",
+};
+
 export default function VerifyEmailPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-[#F8FAFC] p-6">

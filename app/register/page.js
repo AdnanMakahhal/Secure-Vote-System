@@ -1,5 +1,8 @@
-import { ShieldCheck } from "lucide-react";
 import RegisterForm from "@/app/_components/RegisterForm";
+
+export const metadata = {
+  title: "Register",
+};
 
 export default function Page() {
   return (
